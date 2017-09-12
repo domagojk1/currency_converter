@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vGr-81-DJ2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Converter View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ConverterView" id="BYZ-38-t0r" customClass="ConverterView" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kQQ-kn-vfR">
+                                <rect key="frame" x="31" y="74" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rj9-nF-gqS">
+                                <rect key="frame" x="31" y="100" width="313" height="133.5"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Df-cB-iSl">
+                                <rect key="frame" x="31" y="248.5" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blJ-Ok-19z">
+                                <rect key="frame" x="31" y="274.5" width="313" height="133.5"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="voy-nl-6v7">
+                                <rect key="frame" x="31" y="428" width="313" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rp7-ke-SBZ">
+                                <rect key="frame" x="113" y="483" width="149" height="38"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Convert my money">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onConvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6xP-BX-naE"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FT2-LS-xhg">
+                                <rect key="frame" x="0.0" y="521" width="375" height="146"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lrp-vw-7gL">
+                                        <rect key="frame" x="148.5" y="55" width="78" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lrp-vw-7gL" firstAttribute="centerY" secondItem="FT2-LS-xhg" secondAttribute="centerY" id="8yf-Wj-IxA"/>
+                                    <constraint firstItem="Lrp-vw-7gL" firstAttribute="centerX" secondItem="FT2-LS-xhg" secondAttribute="centerX" id="ZaW-2T-eAe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0040465807539999997" green="0.45621109009999999" blue="0.62690472600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kQQ-kn-vfR" secondAttribute="trailing" constant="15" id="1Pd-pN-rWA"/>
+                            <constraint firstItem="blJ-Ok-19z" firstAttribute="height" secondItem="Rj9-nF-gqS" secondAttribute="height" id="2Bb-3i-OuL"/>
+                            <constraint firstItem="FT2-LS-xhg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ERz-aG-LKY"/>
+                            <constraint firstItem="Rp7-ke-SBZ" firstAttribute="top" secondItem="voy-nl-6v7" secondAttribute="bottom" constant="25" id="EsB-kJ-FOt"/>
+                            <constraint firstItem="9Df-cB-iSl" firstAttribute="top" secondItem="Rj9-nF-gqS" secondAttribute="bottom" constant="15" id="Fzw-vl-s4q"/>
+                            <constraint firstItem="FT2-LS-xhg" firstAttribute="top" secondItem="Rp7-ke-SBZ" secondAttribute="bottom" id="JsT-PB-pK7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FT2-LS-xhg" secondAttribute="bottom" id="KEL-fR-qMh"/>
+                            <constraint firstItem="Rj9-nF-gqS" firstAttribute="leading" secondItem="kQQ-kn-vfR" secondAttribute="leading" id="OdM-nL-HqQ"/>
+                            <constraint firstItem="voy-nl-6v7" firstAttribute="leading" secondItem="blJ-Ok-19z" secondAttribute="leading" id="Ppw-to-Jrj"/>
+                            <constraint firstItem="Rj9-nF-gqS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="UeF-Mh-dUm"/>
+                            <constraint firstItem="9Df-cB-iSl" firstAttribute="trailing" secondItem="Rj9-nF-gqS" secondAttribute="trailing" id="bOW-ZQ-OsA"/>
+                            <constraint firstItem="blJ-Ok-19z" firstAttribute="leading" secondItem="9Df-cB-iSl" secondAttribute="leading" id="cTF-o1-1St"/>
+                            <constraint firstItem="9Df-cB-iSl" firstAttribute="leading" secondItem="Rj9-nF-gqS" secondAttribute="leading" id="leh-Db-7YD"/>
+                            <constraint firstItem="Rj9-nF-gqS" firstAttribute="trailing" secondItem="kQQ-kn-vfR" secondAttribute="trailing" id="pHe-Jx-LPj"/>
+                            <constraint firstItem="blJ-Ok-19z" firstAttribute="top" secondItem="9Df-cB-iSl" secondAttribute="bottom" constant="5" id="s4Y-JW-g8i"/>
+                            <constraint firstAttribute="trailing" secondItem="FT2-LS-xhg" secondAttribute="trailing" id="sZu-79-ocB"/>
+                            <constraint firstItem="voy-nl-6v7" firstAttribute="trailing" secondItem="blJ-Ok-19z" secondAttribute="trailing" id="sku-9R-Ud1"/>
+                            <constraint firstItem="kQQ-kn-vfR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="tuc-Lw-WzO"/>
+                            <constraint firstItem="kQQ-kn-vfR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="v7M-hO-mog"/>
+                            <constraint firstItem="blJ-Ok-19z" firstAttribute="trailing" secondItem="9Df-cB-iSl" secondAttribute="trailing" id="xeB-HK-fOy"/>
+                            <constraint firstItem="Rj9-nF-gqS" firstAttribute="top" secondItem="kQQ-kn-vfR" secondAttribute="bottom" constant="5" id="xiO-gk-rew"/>
+                            <constraint firstItem="voy-nl-6v7" firstAttribute="top" secondItem="blJ-Ok-19z" secondAttribute="bottom" constant="20" id="zBP-JM-ZTw"/>
+                            <constraint firstItem="Rp7-ke-SBZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zlE-Ju-Ew3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ju6-UB-ZE3"/>
+                    <connections>
+                        <outlet property="buttonConvert" destination="Rp7-ke-SBZ" id="flL-XA-ivy"/>
+                        <outlet property="labelFrom" destination="kQQ-kn-vfR" id="9FK-3o-twr"/>
+                        <outlet property="labelTo" destination="9Df-cB-iSl" id="y1x-3E-fkT"/>
+                        <outlet property="pickerFrom" destination="Rj9-nF-gqS" id="6hG-Sd-345"/>
+                        <outlet property="pickerTo" destination="blJ-Ok-19z" id="PcY-NP-TdV"/>
+                        <outlet property="resultLabel" destination="Lrp-vw-7gL" id="mPZ-Z3-dKq"/>
+                        <outlet property="txtAmount" destination="voy-nl-6v7" id="gD3-y6-zcA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="214.54272863568218"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KaE-K0-hyT">
+            <objects>
+                <navigationController storyboardIdentifier="ConverterNavController" automaticallyAdjustsScrollViewInsets="NO" id="vGr-81-DJ2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y9z-by-OtD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ybT-9q-Y0w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLU-Wy-5k6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="214.54272863568218"/>
+        </scene>
+    </scenes>
+</document>
